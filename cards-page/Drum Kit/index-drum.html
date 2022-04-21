@@ -77,5 +77,62 @@
         const keys =document.querySelectorAll('.key');
         keys.forEach(key=>key.addEventListener('transitionend',removetransition))
     </script>
+
+    <script>
+        const audiobtn1=document.querySelector('div[data-key="65"]').addEventListener("click",playsoundmpbile1);
+        const audiobtn2=document.querySelector('div[data-key="83"]').addEventListener("click",playsoundmpbile2);
+        const audiobtn3=document.querySelector('div[data-key="68"]').addEventListener("click",playsoundmpbile3);
+        const audiobtn4=document.querySelector('div[data-key="70"]').addEventListener("click",playsoundmpbile4);
+        const audiobtn5=document.querySelector('div[data-key="71"]').addEventListener("click",playsoundmpbile5);
+        const audiobtn6=document.querySelector('div[data-key="72"]').addEventListener("click",playsoundmpbile6);
+        const audiobtn7=document.querySelector('div[data-key="74"]').addEventListener("click",playsoundmpbile7);
+        const audiobtn8=document.querySelector('div[data-key="75"]').addEventListener("click",playsoundmpbile8);
+        const audiobtn9=document.querySelector('div[data-key="76"]').addEventListener("click",playsoundmpbile9);
+        function playsoundmpbile1(){
+            const clapaudio=document.querySelector('audio[data-key="65"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+        function playsoundmpbile2(){
+            const clapaudio=document.querySelector('audio[data-key="83"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+        function playsoundmpbile3(){
+            const clapaudio=document.querySelector('audio[data-key="68"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+        function playsoundmpbile4(){
+            const clapaudio=document.querySelector('audio[data-key="70"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+        function playsoundmpbile5(){
+            const clapaudio=document.querySelector('audio[data-key="71"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+        function playsoundmpbile6(){
+            const clapaudio=document.querySelector('audio[data-key="72"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+        function playsoundmpbile7(){
+            const clapaudio=document.querySelector('audio[data-key="74"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+        function playsoundmpbile8(){
+            const clapaudio=document.querySelector('audio[data-key="75"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+        function playsoundmpbile9(){
+            const clapaudio=document.querySelector('audio[data-key="76"]');
+            clapaudio.currentTime=0;
+            clapaudio.play();
+        }
+    </script>
 </body>
 </html>
