@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login-page {
+    display: flex;
+}
+.login-page .loginimg{
+    width: 60%;
+}
+.login-page .loginimg img{
+    width: 80%;
+    margin-top: 100px;
+}
+.login-page .loginform{
+    margin-top: 100px;
+    background-color: rgb(238, 238, 248);
+    border: black 1px solid;
+    box-shadow: 30px 20px 10px gray;
+    border-radius: 30px;
+    padding: 30px;
+}
+.login-page .loginform h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+.login-page .loginform .loginform-form{
+    margin-top: 50px;
+}
+.login-page .loginform i{
+    padding-right:10px;
+    font-size: 25px;
+}
+.login-page .loginform .loginform-label{
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.login-page .loginform input[type="text"],input[type="password"]{
+    width: 350px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px black inset;
+    margin-top: 15px;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.login-page .loginform input[type="submit"]{
+    width: 180px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(41, 41, 255);
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+.login-page .loginform input[type="submit"]:hover{
+    background-color: black;
+}
+.login-page .loginform a:hover{
+    color: black;
+}
+.login-page .loginform .loginform-forget{
+    padding-left: 40px;
+    text-decoration: none;
+    color: blue;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.login-page .loginform .loginform-create{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 30px;
+}
+.login-page .loginform .loginform-create a{
+    text-decoration: none;
+    padding: 0px 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
