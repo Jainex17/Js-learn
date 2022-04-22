@@ -17,12 +17,12 @@
 <body>
     <nav class="navbar">
         <h2><a class="logo" href="index.html">WEBSITE</a></h2>
-        <i class="fa fa-bars nav-btn"></i>
-        <ul>
-            <li class="links"><a href="index.html">Home</a></li>
-            <li class="links"><a href="#">Contact</a></li>
-            <li class="links"><a href="#">About</a></li>
-            <li class="links"><a href="login page/login.html">Login</a></li>
+        <i class="fa fa-bars nav-btn" onclick="NavBar()"></i>
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="#">Contact</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="login page/login.html">Login</a></li>
             
         </ul>
     </nav>
@@ -90,6 +90,12 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        var menu=document.querySelector('ul[class="nav-links"]');
+        function NavBar(){
+            menu.classList.toggle('nav-show');
+        }
+    </script>
 </body>
 
 </html>

@@ -33,11 +33,11 @@ body{
     margin: 0;
     padding: 10px 20px;
 }
-.navbar ul .links{
+.navbar ul .link{
     align-items: center;
     padding: 6px 25px;
 }
-.navbar ul .links a{
+.navbar ul .link a{
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -49,6 +49,11 @@ body{
 .navbar .nav-btn{
     display: none;
     color: white;
+    transition:ease-in-out 0.4s transform;
+}
+.navbar .nav-btn:hover{
+    transform: rotateY(180deg);
+    color: rgb(97, 194, 194);
 }
 .hading{
     display: flex;
@@ -122,24 +127,31 @@ body{
 
 /*  media for mobile  */
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 659px) {
     .navbar{
         justify-self: right;
     }
-    .navbar ul{
-        margin: 0;
-        display: none;
+    .navbar .nav-links{
         width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: ease 0.4s height;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
     }
-    .navbar .links{
+    .navbar .nav-show{
+        height: 200px;
+    }
+    .navbar .link{
         text-align: center;
-        display: none;
+        margin: 3px 0px;
     }
     .navbar .nav-btn{
         display: block;
         font-size: 30px;
         color: white;
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
     .hading{
         margin: 50px 10px;
