@@ -25,8 +25,15 @@ i {
 }
 nav{
   width: 100%;
-  position: fixed;
   background-color: white;
+}
+.skicky nav{
+  transition: .3s all ease-in;
+  padding-top: 3px;
+  position: fixed;
+}
+.skicky .main-body{
+  margin-top: 130px;
 }
 .navbar {
   padding: 15px 30px;
@@ -122,7 +129,7 @@ nav{
 
 /* main body */
 .main-body{
-  margin-top: 130px;
+  margin-top: 10px;
 }
 /* main body */
 
@@ -218,7 +225,7 @@ nav{
     text-align: center;
     font-size: 23px;
   }
-  .main-body{
+  .skicky .main-body{
     margin-top: 88px;
   }
 }
