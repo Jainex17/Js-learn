@@ -23,14 +23,20 @@ ul {
 i {
   font-size: 25px;
 }
+.container{
+  margin: 0 10%;
+}
+.full-navbar{
+  box-shadow: 0px 1px 13px black;
+}
 nav{
   width: 100%;
   background-color: white;
 }
 .skicky nav{
   transition: .3s all ease-in;
-  padding-top: 3px;
   position: fixed;
+  z-index: 999;
 }
 .skicky .main-body{
   margin-top: 130px;
@@ -63,6 +69,7 @@ nav{
 }
 .icon:hover{
   background-color: black;
+  transition: .3s ease-in background-color;
 }
 .navbar .navbar-left h1 {
   font-size: 2.5rem;
@@ -89,13 +96,13 @@ nav{
   justify-content: flex-end;
 }
 .navbar .nav-links .nav-link {
-  padding: 5px 15px;
+  padding: 5px 10px;
   font-size: 20px;
-  margin: 0 4px;
+  margin: 0 2px;
   font-family: var(--midfont);
 }
 .navbar .nav-links .nav-link .nav-link-text:hover{
-  color: gray;
+  color: blue;
 }
 .navbar .nav-links .nav-link a {
   padding-left: 10px;
@@ -121,112 +128,104 @@ nav{
     
 }
 .sub-nav .sub-nav-link{
-    padding: 12px 20px;
     font-size: 15px;
 }
-
+.sub-nav .sub-nav-link a:hover{
+  color: blue;
+}
+.sub-nav .sub-nav-link p{
+  padding: 12px 20px;
+}
 /* sub-nav */
 
 /* main body */
-.main-body{
-  margin-top: 10px;
-}
-/* main body */
 
-/* responcive */
-@media only screen and (max-width: 768px){
-  i{
-    font-size: 1.2rem;
+
+/* img swiper  */
+
+.imgswiper .swiper-text{
+  z-index: 3;
+  margin: 75px 80px;
+    width: 491px;
+  position: absolute;
   }
-  .navbar{
-    padding: 15px 15px;
-  }
-  .navbar .navbar-left {
-    margin-right: 0px;
-  }
-  .navbar .navbar-left h1{
-    font-size: 2.3rem;
-    padding-right: 2rem;
-  }
-  .serchbox{
-    display: none;
-  }
-  .navbar .res-nav-links{
-    display: flex;
-    align-items: center;
-  }
-  .navbar .res-nav-links .res-nav-link{
-    padding: 5px 5px;
-    font-size: 1.2rem;
-    margin: 0 1px;
-    text-align: center;
-  }
-  .bs-nav{
-    display: none;
-  }
-  .ss-nav{
-    display: block;
-  }
-  .nav-menu-bar{
-    display: block;
-  }
-  .navbar .res-nav-links .nav-link-text{
-    background-color: black;
+.imgswiper .swiper-text span{
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  font-family: var(--lightfont);
+  font-size: 13px;
+}
+.imgswiper .swiper-text h1{
+  font-family: var(--hading);
+  font-size: 2.9rem;
+  margin: 11px 0;
+}
+.imgswiper .swiper-text p{
+  font-family: var(--midfont);
+  font-size: 1.2rem;
+  margin: 11px 0;
+}
+.imgswiper .swiper-text button{
+  cursor: pointer;
+  width: 196px;
+    height: 42px;
+    border-radius: 26px;
+    background-color: blue;
     color: white;
-    padding: 1px 5px;
-    border-radius: 15px;
-  }
-  .navbar #nav-menu{
-    display: block;
-    background-color: initial;
     border: none;
-    margin-left: 17px;
-    cursor: pointer;
-  }
-  .navbar #nav-menu i{
-    display: block;
-    font-size: 27px;
-  }
-  .full-navbar .res-nav{
-    width: 100%;
-    transform: translateX(100%);
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-out;
-    height: 100vh;
-    position:absolute;
-
-  }
-  .active .res-nav{
-    transform: translateX(0%);
-    visibility: visible;
-    opacity: 1;
-    position: absolute;
-    background-color: white;
-  }
-  .nav-links-menu{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 10px;
-    font-size: 1.5rem;
-  }
-  .res-nav .nav-link-menu i{
-    font-size: 1.5rem;
-  }
-
-  .sub-nav .sub-nav-links{
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-  .sub-nav .sub-nav-link{
-    border-bottom: .1px gray solid;
-    width: 90%;
-    text-align: center;
-    font-size: 23px;
-  }
-  .skicky .main-body{
-    margin-top: 88px;
-  }
+    margin: 11px 0;
+    font-family: var(--hading);
+    font-size: 14px;
 }
-/* responcive */
+.imgswiper .swiper-text button:hover{
+  background-color: black;
+  transition: .3s ease-in background-color;
+}
+.imgswiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 390px;
+}
+
+.imgswiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position:absolute;
+}
+
+/* img swiper  */
+/* cat swiper  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 40%;
+  object-fit: cover;
+} */
+/* swiper  */
+/* main body */
