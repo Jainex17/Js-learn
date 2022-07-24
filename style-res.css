@@ -91,12 +91,37 @@
       position: absolute;
       background-color: white;
     }
-    .nav-links-menu{
+    .res-nav .ss-serchbox{
+      display: block;
+      background-color: white;
+      margin: 10px 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
+    }
+    .res-nav .ss-serchbox input[type="search"]{
+      width: 70%;
+      margin: 0;
+      height: 46px;
+      padding: 0 25px;
+      font-size: 15px;
+      font-weight: 100;
+      border-radius: 20px;
+      border: none;
+      background-color: rgb(198, 252, 252);
+      color: black;
+    }
+    .icon {
+      width: 66px;
+      /* margin: 0 -92px; */
+    }
+      .nav-links-menu{
       display: flex;
       justify-content: space-around;
       margin: 20px 10px;
       font-size: 1.5rem;
     }
+
     .res-nav .nav-link-menu i{
       font-size: 1.5rem;
     }

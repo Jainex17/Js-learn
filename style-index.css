@@ -87,6 +87,9 @@ nav{
   background-color: rgb(198, 252, 252);
   color: black;
 }
+.ss-serchbox{
+  display: none;
+}
 .navbar .navbar-left input[type="search"]:hover {
   background-color: white;
   border: 0.1px solid black;
