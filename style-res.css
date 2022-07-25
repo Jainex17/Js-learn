@@ -141,7 +141,7 @@
       margin-top: 77px;
     }
 
-    /* swiper text */
+    /* swiper text-img */
     
 .imgswiper .swiper-text{
     margin: 35px 35px;
@@ -164,11 +164,21 @@
     margin: 8px 0;
     font-size: 13px;
 }
-    /* swiper img */
-    .imgswiper .swiper-slide {
-      height: 290px;
-    }
-    /* swiper text */
+.imgswiper .swiper-slide {
+    height: 290px;
+}
+    /* swiper text-img */
 
+  /* swiper catagory */
+  .catSwiper{
+    height: 170px;
+  }
+  .catSwiper .swiper-slide img {
+    width: 100%;
+  }
+  .swiper-slide h3{
+    font-size: 14px;
+  }
+  /* swiper catagory */
   }
   /* responcive */

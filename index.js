@@ -11,7 +11,7 @@ function togglenavbar() {
 // skicky navbar
 window.addEventListener("scroll", function () {
   var header = document.querySelector("body");
-  header.classList.toggle("skicky", window.scrollY > 0);
+  header.classList.toggle("skicky", window.scrollY > 300);
 });
 
 // img swiper
@@ -36,11 +36,9 @@ var swiper = new Swiper(".myimgSwiper", {
 
 
 /* swiper  */
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".catSwiper", {
   slidesPerView: 4,
-  spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  spaceBetween: 10,
+  loop: true,
+  
 });
